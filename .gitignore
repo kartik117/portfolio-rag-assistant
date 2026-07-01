@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+chroma_db/
+*.egg-info/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Misc
+.DS_Store
+*.log

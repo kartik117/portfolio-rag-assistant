@@ -1,0 +1,87 @@
+KARTIK BAMBLE — AI/ML Engineer & Full-Stack Developer
+
+Contact: bamble.kartik.18ce1037@gmail.com
+GitHub: github.com/kartik117
+Portfolio: kartik117.github.io
+LinkedIn: linkedin.com/in/kartikbamble
+Location: Redmond, WA
+Education: M.S. Computer Science, Syracuse University, graduating May 2026
+
+EXPERIENCE
+
+AI Engineer Intern — Commonwealth of Massachusetts, EOED
+June 2025 to December 2025, Boston, MA
+
+Built hybrid RAG pipeline over 300+ MassHealth policy documents using Amazon OpenSearch with BM25 and k-NN vector search, Titan Embeddings, and Bedrock (Claude). Reduced criteria lookup time from approximately 15 minutes to 3 minutes per request.
+
+Developed XGBoost urgency classifier trained on ICD-10 and CPT codes, flagging approximately 30% of submissions as expedited-eligible before reviewer assignment across 2 million+ MassHealth members.
+
+Implemented agentic document extraction pipeline with AWS Textract and Bedrock (Claude) to autonomously process clinical prior authorization packets, achieving 90% ICD-10 extraction accuracy validated against MMIS records. Deployed in production on ECS Fargate.
+
+Deployed event-driven architecture: ECS Fargate for batch extraction, Lambda for real-time reviewer API, SQS and EventBridge for event-driven re-ingestion. Maintained less than 2 second API response time.
+
+Instrumented with LangSmith tracing and RAGAS evaluation achieving faithfulness 0.88 and context precision 0.83 on a 120-query clinical benchmark with PII guardrails.
+
+Software Developer Intern — Commonwealth of Massachusetts, EOED
+June 2025 to August 2025, Boston, MA
+
+Migrated legacy IIS services to AWS Lambda and REST APIs with OpenSearch, reducing search latency approximately 40%.
+
+Built event-driven ingestion pipelines via Lambda and SQS processing 1 million+ records across 5 integrated systems for near-real-time indexing.
+
+Implemented CloudWatch structured logging, reducing production incident mean time to recovery approximately 20%.
+
+Systems Engineer — Tata Consultancy Services
+July 2022 to July 2024, Mumbai, India
+
+Refactored COBOL monoliths into Azure-hosted Java Spring Boot microservices, reducing nightly batch processing time approximately 40%.
+
+Engineered gRPC and REST APIs for a digital banking platform handling 10,000+ concurrent transactions with sub-100ms latency. Optimized via Redis caching and SQL Server query tuning.
+
+Designed AI-powered document intelligence pipeline using Google Cloud NLP for BFSI compliance review, reducing manual review effort approximately 35%.
+
+Containerized on Azure Kubernetes Service (AKS) with Docker. CI/CD via GitHub Actions and Terraform reduced manual release effort approximately 70% with zero-downtime deployments.
+
+PROJECTS
+
+Provenance — Multi-Agent Research Assistant
+Stack: Python, LangGraph, FastAPI, Gemini, Streamlit, PostgreSQL, Docker
+A multi-agent LangGraph research assistant with a 4-stage pipeline: Search, Filter, Synthesis, and Citation Verification. The citation-verification agent grounds every claim before surfacing it. Achieves RAGAS faithfulness score of 0.81.
+
+RepoMind MCP — Codebase Intelligence Tool
+Stack: Python, TypeScript, Neo4j, FastAPI, MCP SDK, Docker, GitHub Actions
+Parses GitHub repositories via AST into a Neo4j knowledge graph with Function, Class, and File nodes and CALLS, IMPORTS, and INHERITS edges. Exposes the graph as an MCP server so Claude Desktop and Cursor can answer structural code questions grounded in the real graph.
+
+MedallionNYC — Medallion Lakehouse
+Stack: PySpark, Delta Lake, Airflow, DuckDB, Docker
+Medallion lakehouse with Bronze, Silver, and Gold tiers over 10 million+ real NYC TLC taxi trip records. Orchestrated with Airflow, built on Delta Lake for ACID transactions and time travel. Quantified demand shifts by zone after 2025 congestion pricing.
+
+MedFineTune — Medical LLM Fine-Tuning
+Stack: PyTorch, QLoRA, vLLM, Hugging Face
+QLoRA fine-tuning of Mistral-7B on clinical QA data from PubMedQA and MedQA with 4-bit NF4 quantization (r=64, lora_alpha=128). Improved MedQA accuracy from 45% to 57%. Served via vLLM OpenAI-compatible endpoint.
+
+TaskForge — Full-Stack Task Management Platform
+Stack: Node.js, Express, TypeScript, MongoDB, React, Docker, GitHub Actions
+Full-stack project and task management platform with 2-step OTP authentication: password, then email code, then JWT. Tested against real in-memory MongoDB via mongodb-memory-server.
+
+HuntQuest — Real-Time Map-Based Scavenger Hunt
+Stack: Python, FastAPI, PostgreSQL, Redis, React, Leaflet, Kubernetes, Jenkins, GitHub Actions
+Real-time GPS scavenger hunt where teams walk to real Seattle landmarks. Redis GEOADD and GEOSEARCH marks checkpoints the instant a team enters the radius. Redis pub/sub fans updates out across replicas. Kubernetes manifests verified on a local kind cluster.
+
+PixelWave — Real-Time Collaborative Pixel Board
+Stack: Go, gorilla/websocket, Redis, PostgreSQL, React, Docker, GitHub Actions
+An r/place-style real-time collaborative 500x500 pixel board. Go and gorilla/websocket fan out through Redis BITFIELD (4 bits per pixel) and pub/sub. PostgreSQL serves as an append-only replay log for canvas recovery. Load-tested to 550 concurrent connections with approximately 14ms broadcast latency.
+
+SKILLS
+
+AI and Machine Learning: LangChain, LangGraph, RAG, LangSmith, RAGAS, OpenAI API, AWS Bedrock with Claude, Titan Embeddings, XGBoost, Scikit-learn, PyTorch, TensorFlow, QLoRA, vLLM, MCP SDK, FAISS, ChromaDB, sentence-transformers
+
+Cloud and Infrastructure: AWS Lambda, ECS Fargate, SQS, EventBridge, OpenSearch, Textract, Bedrock, S3, Azure AKS, Azure DevOps, Docker, Kubernetes, Terraform, GitHub Actions, CI/CD pipelines
+
+Backend Development: Python, Java, Go, Node.js, FastAPI, Flask, Spring Boot, gRPC, REST APIs, PostgreSQL, MySQL, MongoDB, Redis, SQL Server
+
+Frontend Development: React, Next.js, TypeScript, Tailwind CSS, HTML5, CSS3
+
+Observability: CloudWatch, Grafana, LangSmith, MLflow, Structured Logging
+
+Programming Languages: Python, Java, JavaScript, TypeScript, Go, SQL, C++
