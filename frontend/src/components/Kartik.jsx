@@ -104,7 +104,7 @@ const Kartik = () => {
           <div className="relative group mb-6">
             <div className="absolute -inset-2 bg-gradient-to-r from-blue-600/20 via-slate-600/20 to-teal-600/20 rounded-3xl blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
             <img
-              src="/kartik.jpg"
+              src={`${import.meta.env.BASE_URL}kartik.jpg`}
               alt="Kartik"
               className="relative w-48 h-60 rounded-3xl object-cover shadow-2xl border-2 border-slate-600/30 card-hover"
             />

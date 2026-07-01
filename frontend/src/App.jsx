@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom"
 import KAI from "./components/KAI"
 import Kartik from "./components/Kartik"
 import ContactModal from "./components/ContactModal"
